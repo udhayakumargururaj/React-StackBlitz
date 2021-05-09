@@ -1,11 +1,20 @@
-import React from "react";
-import "./style.css";
+import FontLink from './FontLink';
+import FontLoader from './FontLoader';
+import FontFace from './FontFace';
 
-export default function App() {
+import './App.css';
+
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <>
+      <h1>Applying Fonts Demo</h1>
+      <div className="App">
+        <FontLink />
+        <FontLoader />
+        <FontFace />
+      </div>
+    </>
   );
 }
+
+export default App;
